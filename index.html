@@ -4,86 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>The Ascent Collection — Production Progress</title>
+<title>The Ascent Collection — Progress</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --royal:#02066F; --purple:#7851A9; --ink:#0a0e3d;
-    --gold:#C9A24B; --gold-lt:#E4C976; --paper:#0c1030;
-    --line:rgba(201,162,75,.22); --body:#d8d6ec; --muted:#8f92b5;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;font-family:"EB Garamond",Georgia,serif;font-size:18px;line-height:1.65;color:var(--body);
-    background:radial-gradient(1200px 700px at 50% -260px,rgba(120,81,169,.35),transparent 60%),
-      linear-gradient(165deg,#05082a 0%,#0a0e3d 45%,#241249 100%);
-    background-attachment:fixed;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
-
-  /* nav */
-  nav.sitenav{position:sticky;top:0;z-index:30;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-    background:rgba(5,8,42,.82);border-bottom:1px solid var(--line);}
-  nav.sitenav .in{max-width:1080px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:center;gap:6px;}
-  nav.sitenav a{font-family:"Inter",sans-serif;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
-    color:var(--muted);text-decoration:none;padding:8px 16px;border-radius:22px;border:1px solid transparent;
-    transition:color .2s,background .2s,border-color .2s;}
-  nav.sitenav a:hover{color:var(--gold-lt);}
-  nav.sitenav a.active{color:var(--gold-lt);background:rgba(201,162,75,.10);border-color:var(--line);}
-  nav.sitenav .dot{color:rgba(201,162,75,.4);font-size:12px;}
-
-  /* hero */
-  header.hero{text-align:center;padding:80px 22px 40px;border-bottom:1px solid var(--line);}
-  .seal{width:84px;height:84px;margin:0 auto 26px;display:block;}
-  .eyebrow{font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 18px;}
-  h1{font-family:"Cinzel",serif;font-weight:600;font-size:40px;line-height:1.15;margin:0;letter-spacing:.02em;color:#fff;}
-  h1 .sub{display:block;font-weight:400;font-size:21px;color:#c7c3ff;margin-top:12px;letter-spacing:.08em;}
-  .meta{margin-top:30px;font-family:"Inter",sans-serif;font-size:13px;color:var(--muted);}
-  .meta b{color:var(--gold-lt);font-weight:500;}
-
-  /* timeline */
-  .timeline{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:46px 0 10px;}
-  .tl{flex:1;min-width:210px;max-width:320px;background:rgba(255,255,255,.03);border:1px solid var(--line);
-    border-radius:10px;padding:18px 20px;text-align:center;}
-  .tl .d{font-family:"Cinzel",serif;color:var(--gold);font-size:15px;letter-spacing:.06em;}
-  .tl .t{font-family:"Cinzel",serif;font-size:20px;color:#fff;margin:6px 0 4px;}
-  .tl .n{font-size:14.5px;color:var(--muted);}
-  .tl.now{border-color:var(--gold);background:rgba(201,162,75,.08);}
-
-  section{padding:52px 0 8px;}
-  .kicker{font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--purple);font-weight:600;
-    display:flex;align-items:center;gap:12px;margin:0 0 8px;}
-  .kicker::before{content:"";width:28px;height:1px;background:var(--gold);}
-  h2{font-family:"Cinzel",serif;font-weight:600;font-size:27px;color:#fff;margin:0 0 14px;letter-spacing:.01em;}
-  p{margin:0 0 16px;}
-  .muted{color:var(--muted);}
-
-  /* figures */
-  figure{margin:24px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#080b24;}
-  figure img{display:block;width:100%;height:auto;}
-  figcaption{font-family:"Inter",sans-serif;font-size:13px;color:var(--muted);padding:12px 18px;border-top:1px solid var(--line);}
-  figcaption b{color:var(--gold-lt);font-weight:500;}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  @media(max-width:720px){.two{grid-template-columns:1fr;}}
-
-  /* status */
-  .status{margin:22px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;}
-  .status .row{display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(201,162,75,.12);font-size:16.5px;}
-  .status .row:last-child{border-bottom:none;}
-  .badge{flex:none;font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
-    padding:4px 11px;border-radius:20px;margin-top:2px;min-width:96px;text-align:center;}
-  .done{background:rgba(46,160,110,.16);color:#6fe0ad;}
-  .prog{background:rgba(201,162,75,.16);color:var(--gold-lt);}
-  .todo{background:rgba(140,146,181,.14);color:#b8bbdc;}
-  .status .row b{color:#fff;font-weight:600;}
-
-  .note{background:rgba(120,81,169,.08);border:1px solid rgba(120,81,169,.3);border-radius:10px;padding:16px 20px;margin:20px 0;font-size:15.5px;}
-  .note b{color:var(--gold-lt);}
-
-  footer{text-align:center;padding:44px 22px 60px;margin-top:40px;border-top:1px solid var(--line);
-    font-family:"Inter",sans-serif;font-size:12.5px;color:var(--muted);}
-  footer b{color:var(--gold-lt);font-weight:500;}
-</style>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="gate.css">
+<script>document.documentElement.classList.add('gated');</script>
+<script src="gate.js"></script>
 </head>
 <body>
 
@@ -92,27 +20,31 @@
     <a href="index.html" class="active">Home</a><span class="dot">·</span>
     <a href="status.html">Status</a><span class="dot">·</span>
     <a href="financials.html">Financials</a>
+    <span class="upd">Updated 21 Jul 2026</span>
   </div>
 </nav>
 
 <header class="hero">
   <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
     <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4C976"/><stop offset="1" stop-color="#B98A2E"/></linearGradient></defs>
-    <circle cx="50" cy="50" r="46" fill="none" stroke="url(#g)" stroke-width="2"/>
-    <circle cx="50" cy="50" r="38" fill="none" stroke="url(#g)" stroke-width="1" opacity=".7"/>
+    <circle cx="50" cy="50" r="46" fill="none" stroke="url(#g)" stroke-width="1.5"/>
+    <circle cx="50" cy="50" r="38" fill="none" stroke="url(#g)" stroke-width="1" opacity=".6"/>
     <path d="M50 16l3.2 9.8H63l-7.9 5.8 3 9.8L50 35.4l-8.1 6 3-9.8-7.9-5.8h9.8z" fill="url(#g)"/>
     <text x="50" y="70" text-anchor="middle" fill="url(#g)" font-family="Cinzel,serif" font-size="7" letter-spacing="1.5">TOGETHER</text>
     <text x="50" y="80" text-anchor="middle" fill="url(#g)" font-family="Cinzel,serif" font-size="7" letter-spacing="1.5">WE TRIUMPH</text>
   </svg>
-  <p class="eyebrow">Production Progress &nbsp;·&nbsp; Confidential</p>
-  <h1>The Ascent Collection<span class="sub">Launch Film &amp; Asset Build</span></h1>
-  <div class="meta">Prepared for <b>Reginald Maynor · DMM Production Inc</b> &nbsp;|&nbsp; by <b>Altitude AI</b> &nbsp;|&nbsp; Updated <b>Mon 20 July 2026</b></div>
+  <p class="eyebrow">Private preview</p>
+  <h1>The Ascent Collection<span class="sub">Launch film — progress so far</span></h1>
+  <div class="meta">
+    For <b>Reginald Maynor · DMM Production Inc</b>, on behalf of <b>Terry Jervis</b> · Made by <b>Altitude AI</b><br>
+    Last updated <b>21 July 2026</b>
+  </div>
 
   <div class="wrap">
     <div class="timeline">
-      <div class="tl now"><div class="d">20 JUL — TODAY</div><div class="t">Asset Build</div><div class="n">Box &amp; collection pieces in production</div></div>
-      <div class="tl"><div class="d">01 AUG</div><div class="t">Teaser Target</div><div class="n">Pre-sale trailer ready to launch</div></div>
-      <div class="tl"><div class="d">23 AUG</div><div class="t">Obama Center</div><div class="n">Red-carpet launch via XL Fest</div></div>
+      <div class="tl now"><div class="d">20 Jul — now</div><div class="t">Building the box</div><div class="n">The box and its pieces are in production</div></div>
+      <div class="tl"><div class="d">1 Aug</div><div class="t">Teaser</div><div class="n">Aim to have the trailer ready for the pre-sale</div></div>
+      <div class="tl"><div class="d">23 Aug</div><div class="t">Launch</div><div class="n">Obama Center, Chicago, with XL Fest</div></div>
     </div>
   </div>
 </header>
@@ -120,68 +52,63 @@
 <div class="wrap">
 
   <section>
-    <p class="kicker">The Film</p>
-    <h2>Where the trailer stands</h2>
-    <p>The creative direction and full production spec are locked: a 90-second hero film cut down to 60 and 30 seconds, built for the warm audience on Terry's database — leading with the heroes and the movement, stacking the collection's value, then the offer. The build effort right now is on the box and its contents, which feed the film's signature "box opens" reveal and the value-stack sequence.</p>
+    <p class="kicker">What we're making</p>
+    <h2>A short film to launch the collection</h2>
+    <p>The Ascent Collection is a set of two gold-plated collector coins and a heritage box, honouring the <b>Pilots of the Caribbean</b> and the <b>Tuskegee Airmen</b>. We're making a short film to launch it, so people can see the collection before it goes on sale.</p>
+    <p>This page is a private preview of what we've built so far. We'll keep it up to date as the work moves on.</p>
   </section>
 
   <section>
-    <p class="kicker">The Presentation Box</p>
-    <h2>Rebuilt as a clean digital hero</h2>
-    <p>The navy presentation box has been rebuilt as a premium CG object so it can be lit, opened and filmed from any angle — closed for the reveal, open for the contents. The gold "Together We Triumph" mark is composited crisp, identical on every shot.</p>
+    <p class="kicker">The film</p>
+    <h2>Three lengths, one story</h2>
+    <p>The main film is a 90-second trailer, with shorter 60- and 30-second versions for social media. It opens by showing the box being opened, so most of the work right now is on the box itself and the pieces that go inside it.</p>
+  </section>
+
+  <section>
+    <p class="kicker">The presentation box</p>
+    <h2>Built to film from any angle</h2>
+    <p>We rebuilt the navy box as a 3-D model, so it can be lit and filmed either closed or open. The gold "Together We Triumph" lettering on the lid stays crisp in every shot.</p>
     <div class="two">
-      <figure><img src="assets/box-closed.jpg" alt="Closed presentation box"><figcaption><b>Closed</b> — the sealed hero, for the opening beat</figcaption></figure>
-      <figure><img src="assets/box-open.jpg" alt="Open presentation box with branded lid"><figcaption><b>Open</b> — branded lid, empty tray ready to load</figcaption></figure>
+      <figure><img src="assets/box-closed.jpg" alt="The closed presentation box"><figcaption><b>Closed</b> — for the opening shot</figcaption></figure>
+      <figure><img src="assets/box-open.jpg" alt="The open presentation box showing the branded lid"><figcaption><b>Open</b> — showing the branded lid</figcaption></figure>
     </div>
   </section>
 
   <section>
-    <p class="kicker">The Collection — Piece by Piece</p>
-    <h2>The Aircraft &amp; Supercar cover</h2>
-    <p>Rebuilt from the ground up: the Rolls-Royce badge, the two Merlin-powered fighters (the red-tail Mustang for Tuskegee, the Spitfire for the Caribbean), the Bentley Continental GT, and the Bentley / Jack Barclay lockup — all rebuilt sharp on the original layout.</p>
-    <figure><img src="assets/cover.jpg" alt="Aircraft to Supercar booklet cover"><figcaption><b>Aircraft to Supercar</b> — booklet cover, complete</figcaption></figure>
-    <figure><img src="assets/aircraft.jpg" alt="Two WWII fighter aircraft"><figcaption><b>The aircraft plate</b> — red-tail P-51 Mustang &amp; Supermarine Spitfire, both Rolls-Royce Merlin powered</figcaption></figure>
+    <p class="kicker">The booklet cover</p>
+    <h2>Aircraft to Supercar</h2>
+    <p>The cover of the booklet, rebuilt piece by piece: the Rolls-Royce badge, a red-tailed P-51 Mustang and a Spitfire, the Bentley Continental GT, and the Bentley / Jack Barclay lettering.</p>
+    <figure><img src="assets/cover.jpg" alt="The Aircraft to Supercar booklet cover"><figcaption><b>The finished booklet cover</b></figcaption></figure>
+    <figure><img src="assets/aircraft.jpg" alt="A P-51 Mustang and a Spitfire"><figcaption>The two aircraft on the cover — a red-tailed <b>P-51 Mustang</b> and a <b>Supermarine Spitfire</b>. Both were powered by the Rolls-Royce Merlin engine.</figcaption></figure>
   </section>
 
   <section>
-    <p class="kicker">The Coin Cases</p>
-    <h2>Matched navy &amp; crimson pair</h2>
-    <figure><img src="assets/cases.jpg" alt="Blue and red branded coin cases"><figcaption><b>Pilots of the Caribbean</b> (navy) &amp; <b>Tuskegee Airmen</b> (crimson) — clamshell cases, branded</figcaption></figure>
+    <p class="kicker">The coin cases</p>
+    <h2>One for each group</h2>
+    <p>Two cases, matched as a pair: navy for the Pilots of the Caribbean, crimson for the Tuskegee Airmen. We're finishing the logo placement on the lids.</p>
+    <figure><img src="assets/cases.jpg" alt="Navy and crimson coin cases"><figcaption><b>Pilots of the Caribbean</b> (navy) and <b>Tuskegee Airmen</b> (crimson)</figcaption></figure>
   </section>
 
   <section>
-    <p class="kicker">The Collection Together</p>
-    <h2>The museum taking shape</h2>
-    <figure><img src="assets/collection.jpg" alt="Collection pieces arranged"><figcaption>Finished pieces staged in the museum world — the booklet, the King Charles portrait card, and the Merlin engine card</figcaption></figure>
+    <p class="kicker">The pieces together</p>
+    <h2>How it's coming together</h2>
+    <figure><img src="assets/collection.jpg" alt="Finished collection pieces staged together"><figcaption>Some of the finished pieces staged together — the booklet, the King Charles portrait card, and the Merlin engine card</figcaption></figure>
   </section>
 
   <section>
-    <p class="kicker">Status</p>
-    <h2>What's done, in progress, and next</h2>
-    <div class="status">
-      <div class="row"><span class="badge done">Complete</span><div><b>Film concept &amp; full production spec</b> — 90 / 60 / 30 second plan, shot list, VO script</div></div>
-      <div class="row"><span class="badge done">Complete</span><div><b>Presentation box</b> — closed &amp; open shells, branded "Together We Triumph" lid</div></div>
-      <div class="row"><span class="badge done">Complete</span><div><b>Aircraft to Supercar cover</b> — fully rebuilt to the original layout</div></div>
-      <div class="row"><span class="badge done">Complete</span><div><b>King Charles portrait card</b> &amp; <b>Merlin engine card</b></div></div>
-      <div class="row"><span class="badge done">Complete</span><div><b>Coin cases</b> — navy &amp; crimson shells generated and branded</div></div>
-      <div class="row"><span class="badge done">Complete</span><div><b>Coins</b> — existing gold turntable renders ready to place</div></div>
-      <div class="row"><span class="badge prog">In progress</span><div><b>Case logo placement</b> — final alignment pass on the lids</div></div>
-      <div class="row"><span class="badge prog">In progress</span><div><b>Open box tray</b> — regenerating with card &amp; case slots to hold the pieces</div></div>
-      <div class="row"><span class="badge todo">Next</span><div><b>Remaining pieces</b> — certificate, comic replica, booklets, Women at War print, pop-up display, care booklet</div></div>
-      <div class="row"><span class="badge todo">Next</span><div><b>Loaded box interior</b> — assemble all pieces into the tray</div></div>
-      <div class="row"><span class="badge todo">Next</span><div><b>Film production</b> — generate remaining scenes, record voiceover, edit, cut down to 60 &amp; 30</div></div>
-    </div>
-
+    <p class="kicker">Where things stand</p>
+    <h2>Most of it is built</h2>
+    <p>The box is done and most of the pieces are made. A few still need finishing, and then everything goes into the box and filming begins. There's a full breakdown on the <a class="inline" href="status.html">Status page</a>.</p>
     <div class="note">
-      <b>Two items for you &amp; Terry:</b> a few remaining pieces need the real product photography to process (certificate, comic, booklets, print). And the partner marks (Rolls-Royce, Bentley) and the King Charles image should have their usage rights kept on file for the commercial launch.
+      <b>Two things to keep on file.</b> Some of the remaining pieces need the real product photos before we can rebuild them. And the Rolls-Royce, Bentley and King Charles images need their usage rights kept on record for the launch.
     </div>
   </section>
 
 </div>
 
 <footer>
-  <b>Altitude AI</b> &nbsp;—&nbsp; Digital production for the Terry Jervis collection<br>
-  This page is a working progress preview and is not for public distribution.
+  <b>Altitude AI</b> — production for the Terry Jervis collection<br>
+  Private preview · please don't share publicly · last updated 21 July 2026
 </footer>
 
 </body>
