@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Ascent Collection — Project Status</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --royal:#02066F; --purple:#7851A9; --ink:#0a0e3d;
+    --gold:#C9A24B; --gold-lt:#E4C976; --paper:#0c1030;
+    --line:rgba(201,162,75,.22); --body:#d8d6ec; --muted:#8f92b5;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"EB Garamond",Georgia,serif;font-size:18px;line-height:1.65;color:var(--body);
+    background:radial-gradient(1200px 700px at 50% -260px,rgba(120,81,169,.35),transparent 60%),
+      linear-gradient(165deg,#05082a 0%,#0a0e3d 45%,#241249 100%);
+    background-attachment:fixed;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+
+  /* nav */
+  nav.sitenav{position:sticky;top:0;z-index:30;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    background:rgba(5,8,42,.82);border-bottom:1px solid var(--line);}
+  nav.sitenav .in{max-width:1080px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:center;gap:6px;}
+  nav.sitenav a{font-family:"Inter",sans-serif;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--muted);text-decoration:none;padding:8px 16px;border-radius:22px;border:1px solid transparent;
+    transition:color .2s,background .2s,border-color .2s;}
+  nav.sitenav a:hover{color:var(--gold-lt);}
+  nav.sitenav a.active{color:var(--gold-lt);background:rgba(201,162,75,.10);border-color:var(--line);}
+  nav.sitenav .dot{color:rgba(201,162,75,.4);font-size:12px;}
+
+  /* hero */
+  header.hero{text-align:center;padding:60px 22px 34px;border-bottom:1px solid var(--line);}
+  .eyebrow{font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-lt);margin:0 0 18px;}
+  h1{font-family:"Cinzel",serif;font-weight:600;font-size:38px;line-height:1.15;margin:0;letter-spacing:.02em;color:#fff;}
+  h1 .sub{display:block;font-weight:400;font-size:20px;color:#c7c3ff;margin-top:12px;letter-spacing:.08em;}
+  .meta{margin-top:26px;font-family:"Inter",sans-serif;font-size:13px;color:var(--muted);}
+  .meta b{color:var(--gold-lt);font-weight:500;}
+
+  /* timeline */
+  .timeline{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:40px 0 10px;}
+  .tl{flex:1;min-width:210px;max-width:320px;background:rgba(255,255,255,.03);border:1px solid var(--line);
+    border-radius:10px;padding:18px 20px;text-align:center;}
+  .tl .d{font-family:"Cinzel",serif;color:var(--gold);font-size:15px;letter-spacing:.06em;}
+  .tl .t{font-family:"Cinzel",serif;font-size:20px;color:#fff;margin:6px 0 4px;}
+  .tl .n{font-size:14.5px;color:var(--muted);}
+  .tl.now{border-color:var(--gold);background:rgba(201,162,75,.08);}
+
+  section{padding:48px 0 8px;}
+  .kicker{font-family:"Inter",sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--purple);font-weight:600;
+    display:flex;align-items:center;gap:12px;margin:0 0 8px;}
+  .kicker::before{content:"";width:28px;height:1px;background:var(--gold);}
+  h2{font-family:"Cinzel",serif;font-weight:600;font-size:27px;color:#fff;margin:0 0 14px;letter-spacing:.01em;}
+  p{margin:0 0 16px;}
+  .muted{color:var(--muted);}
+
+  /* status */
+  .status{margin:22px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .status .row{display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid rgba(201,162,75,.12);font-size:16.5px;}
+  .status .row:last-child{border-bottom:none;}
+  .badge{flex:none;font-family:"Inter",sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+    padding:4px 11px;border-radius:20px;margin-top:3px;min-width:96px;text-align:center;}
+  .done{background:rgba(46,160,110,.16);color:#6fe0ad;}
+  .prog{background:rgba(201,162,75,.16);color:var(--gold-lt);}
+  .todo{background:rgba(140,146,181,.14);color:#b8bbdc;}
+  .status .row b{color:#fff;font-weight:600;}
+
+  .note{background:rgba(120,81,169,.08);border:1px solid rgba(120,81,169,.3);border-radius:10px;padding:16px 20px;margin:20px 0 4px;font-size:15.5px;}
+  .note b{color:var(--gold-lt);}
+
+  footer{text-align:center;padding:44px 22px 60px;margin-top:40px;border-top:1px solid var(--line);
+    font-family:"Inter",sans-serif;font-size:12.5px;color:var(--muted);}
+  footer b{color:var(--gold-lt);font-weight:500;}
+
+  @media(max-width:640px){h1{font-size:29px;}h2{font-size:23px;}}
+</style>
+</head>
+<body>
+
+<nav class="sitenav">
+  <div class="in">
+    <a href="index.html">Home</a><span class="dot">·</span>
+    <a href="status.html" class="active">Status</a><span class="dot">·</span>
+    <a href="financials.html">Financials</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Project Status &nbsp;·&nbsp; Confidential</p>
+  <h1>The Ascent Collection<span class="sub">Production Status &amp; Timeline</span></h1>
+  <div class="meta">Prepared for <b>Reginald Maynor · DMM Production Inc</b> &nbsp;|&nbsp; on behalf of <b>Terry Jervis</b> &nbsp;|&nbsp; by <b>Altitude AI</b> &nbsp;|&nbsp; Updated <b>Mon 21 July 2026</b></div>
+
+  <div class="wrap">
+    <div class="timeline">
+      <div class="tl now"><div class="d">20 JUL — NOW</div><div class="t">Asset Build</div><div class="n">Box &amp; collection pieces in production</div></div>
+      <div class="tl"><div class="d">01 AUG</div><div class="t">Teaser Target</div><div class="n">Pre-sale trailer ready to launch</div></div>
+      <div class="tl"><div class="d">23 AUG</div><div class="t">Obama Center</div><div class="n">Red-carpet launch, Chicago, via XL Fest</div></div>
+    </div>
+    <p class="muted" style="text-align:center;font-size:14.5px;margin-top:16px;">The earlier December 2025 Chicago event has been superseded by the Obama Center launch.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <p class="kicker">The Deliverable</p>
+    <h2>Where the project stands</h2>
+    <p>The headline deliverable is the cinematic <b style="color:#fff;">launch film</b> — a 90-second hero cut with 60 and 30-second cut-downs for the pre-sale. The build effort right now is on the museum box and its ten heritage pieces, which feed the film's signature "box opens" reveal and the value-stack sequence. The container tier is complete; most of the ten pieces are built, with a final set still to produce before the box interior is assembled and filming begins.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Tier 1 — The Container</p>
+    <h2>Complete</h2>
+    <div class="status">
+      <div class="row"><span class="badge done">Complete</span><div><b>Closed presentation box</b> — the sealed hero for the opening beat</div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>Open presentation box</b> — branded "Together We Triumph" lid</div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>"Together We Triumph" emblem</b> — clean reusable asset</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Tier 2 — The Ten Heritage Pieces</p>
+    <h2>Built, in progress &amp; to come</h2>
+    <div class="status">
+      <div class="row"><span class="badge done">Complete</span><div><b>Merlin engine card</b></div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>Aircraft to Supercar cover</b> — fully rebuilt: Rolls-Royce badge, red-tail P-51 Mustang &amp; Spitfire, Bentley Continental GT, Bentley / Jack Barclay lockup, titles</div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>King Charles portrait card</b> — rights confirmed via Reginald</div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>Coins</b> — existing CG turntable renders ready to place</div></div>
+      <div class="row"><span class="badge done">Complete</span><div><b>Coin cases</b> — navy "Pilots of the Caribbean" &amp; crimson "Tuskegee Airmen" shells generated &amp; branded</div></div>
+      <div class="row"><span class="badge prog">In progress</span><div><b>Case logo placement</b> — final alignment pass on the lids</div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Certificate of provenance</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Jamaica Spitfire comic replica</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Man to Superman booklet</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Mighty Merlin booklet</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Women at War print</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>First Top Guns pop-up display</b></div></div>
+      <div class="row"><span class="badge todo">To produce</span><div><b>Care booklet</b> — "Museum in a Box"</div></div>
+    </div>
+    <div class="note">
+      <b>Note:</b> a few of the remaining pieces (certificate, comic, booklets, print) need the real product photography to process before they can be rebuilt cleanly.
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Next Up</p>
+    <h2>The path to filming</h2>
+    <div class="status">
+      <div class="row"><span class="badge todo">Next</span><div><b>Rebuild the open box tray</b> — proper card &amp; case slots to hold the pieces (not coin wells)</div></div>
+      <div class="row"><span class="badge todo">Next</span><div><b>Assemble the loaded box interior</b> — all pieces staged in the tray</div></div>
+      <div class="row"><span class="badge todo">Next</span><div><b>Film production</b> — generate remaining scenes, record voiceover, edit, and cut down to 60 &amp; 30 seconds</div></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <b>Altitude AI</b> &nbsp;—&nbsp; Digital production for the Terry Jervis collection<br>
+  This page is a working progress preview and is not for public distribution.
+</footer>
+
+</body>
+</html>
