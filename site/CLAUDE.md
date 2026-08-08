@@ -59,9 +59,10 @@ remove it without replacing the argument it makes.
 
 ## Hard rules
 
-1. **No photography until rights are confirmed.** The King Charles portrait, the Rolls-Royce
-   and Bentley marks, and the Getty-credited images of Lena Horne and Mona Baptiste are all
-   unresolved. The site is designed to look finished without them.
+1. **Photography is cleared.** Bolaji has confirmed (Aug 2026) that all necessary permissions
+   are in place for the content, including partner marks and archive imagery. Image slots across
+   the site name the exact file each expects — see assets/img/README.md for the drop-in list.
+   Keep a note of which agreement covers which asset as they go in.
 2. **500 sets, 38mm, 24ct gold finish, 1944 Merlin engine.** These numbers appear across the
    coin page, the launch page and the spec. They must agree everywhere.
 3. **Forms post into GoHighLevel**, never a second database. Terry's warm audience is the
