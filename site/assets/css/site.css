@@ -409,8 +409,8 @@ a { color: inherit; }
 .slot--wide { min-height: 300px; }
 /* Coin renders: transparent GIFs that must show in full (never cropped) and
    float on the section rather than sit in a placeholder frame. */
-.slot--coin { background: none; border: 0; overflow: visible; aspect-ratio: 1 / 1; min-height: 0; max-width: 240px; margin-inline: auto; }
-.slot--coin img { position: static; width: 100%; height: 100%; object-fit: contain; }
+.slot--coin { background: none; border: 0; overflow: visible; min-height: 0; }
+.slot--coin img { position: static; width: 100%; max-width: 240px; height: auto; object-fit: contain; margin-inline: auto; }
 .slot--coin .slot__hint { display: none; }
 .band--light .slot {
   background: linear-gradient(150deg, rgba(2,6,111,0.06) 0%, rgba(120,81,169,0.1) 100%);
