@@ -251,3 +251,48 @@ music (stereo) → mix → loudnorm −14. Output 2ch/48k. Music fades last 2s.
 - No burned captions this round (kept the composites clean) — can add.
 - Emblem bug still deferred (no emblem.png).
 - Working branch only, not main.
+
+## Session — 2026-08-11 (Claude Code): v4 — Ezra clear + content matched to VO ✅
+Addressed the two v3 notes. **Deliverable:** `film/out/ascent-hero-v4.mp4`
+— 90.68s, 1920x1080, 25fps, STEREO, ~50 MB.
+
+Pulled (byte-matched Drive): s3-wall REGEN (2,078,459 — re-downloaded, not
+cached), s5-lancaster (2,056,270), s5-b17 (2,050,335).
+
+### Note 1 — Ezra no longer blocks any screen
+New s3-wall has Ezra in the left third; the wall panel is fully clear, so
+I corner-pin the heroes photo straight onto it (perspective) — no more
+luma-restore. s4/s5/s6/s7 already kept him clear.
+
+### Note 2 — screens now show exactly what the VO names, in order
+- s3 heroes (Pilots of Caribbean / Tuskegee) ✓
+- s4 the two cased coins + emblem coin ✓
+- **s5 montage**, timed to the words: comp screen (Spitfire+Mustang) →
+  full-frame **Spitfire/Mustang → Lancaster → B-17** (the two new Flow
+  clips) → **coin obverse relief** for the women's beat.
+- **s6 sequence** on the case screen: **Merlin relic → printed replica →
+  Royal Warrant certificate** (from the reveal), in VO order.
+- s7 offer (500 / £1,500·$1,999), my EB Garamond text.
+
+**Women's beat — rationale (per client):** we do NOT show photographs of
+Lena Horne or Mona Baptiste. Licensing and estate advertising-consent are
+unresolved, so as the VO names them the screen shows the **coin obverse
+relief** (from the reveal). Revisit only if written consent is secured.
+
+### Cut / audio
+8 beats over the locked VO timeline (adelays unchanged), slowed 1.25–1.5x
+to sit under each line; s5 beat = screen + 11s full-frame montage. One
+heritage grade throughout. **Stereo** mix (VO panned, music sidechain-
+ducked, dual loudnorm, 2s fade). 90.68s.
+
+### Verified
+ffprobe 90.68s/1080p/25fps/1 video + 1 **stereo** audio ✓; 12 beat frames
+— each screen matches its VO line ✓; black-frame check clean at all 7
+joins ✓; VO@27 −15.3 dB vs music@37 −17.4 dB ✓.
+
+### Notes for the final
+- Still 1.25–1.5x slow-mo on the 8s Flow scenes (minor judder); 10–12s
+  gens remove it. Coins/artefacts/Merlin screen content is the 640x360
+  reveal (soft; screen treatment masks it) — turntables <10 MB or a clean
+  re-export sharpen it. Emblem bug still deferred. No burned captions.
+- Working branch only, not main.
