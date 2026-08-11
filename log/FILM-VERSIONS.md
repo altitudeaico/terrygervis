@@ -13,4 +13,19 @@
 
 **Open items carried between versions:** price confirmation (£1,500 vs
 £1,200) · Reg's clean re-export (no watermark) for the master · final
-music licence · grade unification pass · end-card date/URL.
+music licence · grade unification pass · end-card date/URL ·
+**Rolls-Royce & Bentley marks on-screen** at "Rolls-Royce and Bentley" is
+endorsement-adjacent — same clearance basket as the site wording ·
+**Lena Horne animation** — client-supplied, pending upload; client
+decision on likeness clearance (log with date on arrival).
+
+## v5 build status (storyboard approved 11 Aug)
+- Storyboard v5 approved; one-page visual storyboard published for sign-off
+  (`film/treatment/storyboard-v5.html`).
+- Title wording confirmed: **"OWN A PIECE OF HISTORY"** (EB Garamond, gold).
+- Prepped now (ready for the cut): **RR/Bentley plate** (from reveal ~21s)
+  and the EB Garamond **text cards** (title + offer). Mona Baptiste stays
+  on the coin relief.
+- Awaiting **lena-horne.mp4** (client). On arrival, log verbatim:
+  "Lena Horne animation — client-supplied asset, client decision on
+  likeness clearance" + date. Then build v5 (~96s, phrase-accurate) same day.
