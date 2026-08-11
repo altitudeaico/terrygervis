@@ -296,3 +296,50 @@ joins ✓; VO@27 −15.3 dB vs music@37 −17.4 dB ✓.
   reveal (soft; screen treatment masks it) — turntables <10 MB or a clean
   re-export sharpen it. Emblem bug still deferred. No burned captions.
 - Working branch only, not main.
+
+## Asset provenance — 2026-08-11
+- **Lena Horne animation (lena-horne.mp4)** — Terry holds the appropriate
+  licenses and explicit permissions. (Client-supplied; recorded per client
+  instruction, 2026-08-11.)
+- **s6-case.mp4 upload mix-up:** the file uploaded as s6-case.mp4 (2,478,400
+  bytes) is byte-identical (md5 edf444ec…) to coins-boxopen.mp4 — i.e. the
+  box-opening animation, NOT the head-on Ezra panel. v5 uses an INTERIM
+  full-frame s6 (Merlin→comic→Top Guns→certificate) pending the correct
+  head-on panel; composite swaps in on re-upload.
+
+## Session — 2026-08-11 (Claude Code): v5 — storyboard-accurate, ~96s ✅
+Built the approved storyboard v5. **Deliverable:** `film/out/ascent-hero-v5.mp4`
+— 96.52s, 1920x1080, 25fps, STEREO, ~68 MB.
+
+New assets pulled (byte-matched Drive): coins-boxopen, s5-spitfire,
+lena-horne, topguns, bentley, s6-case(REGEN). All 1280x720/24fps.
+
+### Beats (9), phrase-accurate to measured VO timings
+1 keeper · 2 s3-wall: TITLE "OWN A PIECE OF HISTORY" → heroes (on the wall)
+· 3 BENTLEY scene (Ezra+car, for "Rolls-Royce and Bentley") · 4 s4-plinth:
+box-open → white-flare → coin reveal (composited; flare on "commemorative
+coins") · 5 s5: Spitfire (on screen) → full-frame Mustang → Lancaster →
+B-17 (all LIVE footage now) → Lena Horne (animated) → coin (Mona) · 6 s6
+INTERIM full-frame: Merlin → cards → Top Guns (animated) → certificate ·
+7 s7 billboard: upgraded offer card composited · 8 handover · 9 endcard.
+VO adelays: s1 1.5 · s3 14 · s4 27.5 · s5 42 · s6 58 · s7 74 · s8 84.5.
+
+### VO cut-off — FIXED
+Film relaxed to 96.52s. s8 ends 92.7s, clear of the music fade (94.52).
+Audio-length bug found + fixed: loudnorm was re-truncating the padded VO
+bus (audio ended 89.9s, clipping s8). Reordered so apad is the LAST filter
+on the VO bus and the mix; baked a fixed 96.52s music bed. Final audio =
+96.52s, stereo, s8 fully present.
+
+### Verified
+ffprobe 96.52s/1080p/25fps/1 video + 1 stereo audio ✓; 16 beat frames —
+each screen/scene matches its VO phrase ✓; black-frame check clean at all
+8 joins ✓; s8 VO energy present at 91s, resolves before the fade ✓; VO
+above the ducked music at s3/s5/s7 ✓.
+
+### Known items
+- **s6 is INTERIM (full-frame)** — the uploaded s6-case.mp4 was a duplicate
+  of coins-boxopen (box-opening), not the head-on Ezra panel. Composite
+  swaps onto the panel when the correct file lands.
+- Mild slow-mo on some 8s Ezra scenes to fill their VO windows.
+- Emblem bug still deferred. Working branch only, not main.
