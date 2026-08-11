@@ -99,3 +99,54 @@ to its line, add the endcard, fix the emblem + stereo. That's the master.
 
 **Drop the 5 clips in Drive `film-src` as** `s3-wall.mp4`, `s4-plinth.mp4`,
 `s5-screen.mp4`, `s6-case.mp4`, `s7-billboard.mp4`.
+
+---
+
+# v4 revisions (after v3 review) — two fixes
+
+## FIX 1 — Ezra must NEVER block the screen
+Only **s3-wall** failed this (his back was in front of the panel). Rule for
+every screen scene, reinforced:
+> Ezra stands well to ONE SIDE (left or right third), profile or
+> three-quarter, looking toward the panel — **never between the camera and
+> the panel.** The ENTIRE display surface is visible, front-on, and
+> unobstructed. Nothing crosses in front of the screen.
+
+**Regenerate s3-wall** with this prompt:
+> A grand dark private museum gallery. A distinguished older gentleman
+> (Ezra) stands to the LEFT of frame, in three-quarter profile, looking
+> toward a very large blank display wall that fills the right two-thirds of
+> the frame — the whole panel visible and unobstructed. Brass uplighters,
+> glass cases and portraits in shadow, dust in the light. [+ STYLE SUFFIX]
+
+## FIX 2 — screens must show exactly what the VO names, in order
+The composite can play a short SEQUENCE on a screen. What each needs:
+
+- **s4 coins** — sharper if the **turntable .movs** are re-exported **under
+  10 MB** (the connector can't pull >10 MB); otherwise I keep the reveal coins.
+- **s5** — must show, timed to the words: **Spitfire → Mustang P-51D →
+  Lancaster → B-17 → Lena Horne → Mona Baptiste.** I have Spitfire+Mustang.
+  **Please provide:**
+  - **Lancaster** and **B-17** — generate in Flow (prompts below).
+  - **Lena Horne** and **Mona Baptiste** — supply REAL archival photographs
+    (they are real people; we animate real photos, never fabricate them).
+- **s6** — I'll re-cut from the reveal to show **Merlin engine relic →
+  comic-book replica → Royal Warrant certificate**, in that order (all
+  present in Reg's footage). No new asset needed.
+
+### Flow prompts for the two missing aircraft (image or image-to-video)
+**Lancaster:**
+> A four-engine Avro Lancaster heavy bomber in flight through dramatic
+> golden-hour cloud, three-quarter view, propellers turning, sunlight on
+> the fuselage, volumetric light, epic and dignified, photoreal, 35mm film
+> look, fine grain, 16:9. No text, no watermark.
+
+**B-17:**
+> A B-17 Flying Fortress in flight through towering sunlit clouds,
+> three-quarter view, four propellers turning, sun glinting off polished
+> aluminium, volumetric god-rays, heroic scale, photoreal, 35mm film look,
+> fine grain, 16:9. No text, no watermark.
+
+Drop new/replacement clips in Drive `film-src`: `s3-wall.mp4` (overwrite),
+`s5-lancaster.mp4`, `s5-b17.mp4`, and the two women's photos as
+`lena-horne.jpg`, `mona-baptiste.jpg`.
