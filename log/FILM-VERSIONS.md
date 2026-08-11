@@ -12,3 +12,4 @@
 **Open items carried between versions:** price confirmation (£1,500 vs
 £1,200) · Reg's clean re-export (no watermark) for the master · final
 music licence · grade unification pass · end-card date/URL.
+| CUT v3 | 11 Aug | "Museum of Screens" — Ezra throughout; product content composited ONTO surfaces in his scenes (wall/plinth/easel/case/billboard), synced to VO; s5 cuts through to full-frame aircraft; stereo mix. **90.60s, 1920x1080/25fps, ~45 MB** | realise the on-screen-content direction |

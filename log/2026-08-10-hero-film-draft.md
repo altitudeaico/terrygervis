@@ -194,3 +194,60 @@ sidechain-ducked, VO bus loudnorm −16, mix loudnorm −14, music afade last
 - Endcard caption duplicates the endcard title — trim one for the final.
 - Kept on the **working branch, NOT main** — promote when the Flow
   middles land / on your sign-off.
+
+## Session — 2026-08-11 (Claude Code): FULL v3 "Museum of Screens" ✅
+The direction the client wanted: Ezra through the whole film, product
+content composited ONTO surfaces inside his scenes (video wall, plinth
+screen, easel screen, glass-case screen, night billboard), synced so
+picture follows voice.
+
+**Deliverable:** `film/out/ascent-hero-v3.mp4` — 90.60s, 1920x1080, 25fps,
+1 video + 1 audio (**STEREO**), ~45 MB.
+
+### Pulled + verified (5 Flow scenes, byte-matched Drive)
+s3-wall, s4-plinth, s5-screen (correct 2,146,697 dup), s6-case,
+s7-billboard — all 1280x720/24fps/8s. (ezra-ref stills already held.)
+
+### Compositing (per panel, measured from a 96px grid)
+- Corner-pinned our content onto each blank panel (rect overlay for the
+  frontal s3/s5; ffmpeg `perspective` corner-pin for the angled
+  s4/s6/s7), + screen treatment: scanlines, bezel-fit, bloom, light-spill.
+- **s3** heroes photo (faces intact) on the wall + Ezra luma-restored in
+  front (he stands between camera and panel).
+- **s4** the two cased coins + emblem coin (from reveal) on the plinth.
+- **s5** aircraft on the easel screen, then a **hard cut THROUGH to
+  full-frame aircraft** for the heart of vo-s5, per the note.
+- **s6** provenance/Royal-Box card (reveal) in the glass case.
+- **s7** OFFER CARD I built (EB Garamond, "500 / of 500 / £1,500·$1,999"
+  — text set by me, never from generated imagery) corner-pinned onto the
+  night billboard, with light-spill; perspective matched.
+- Screen content sources: reveal macro for coins + artefacts (turntable
+  .movs were >10 MB, over the Drive-connector download cap — used the
+  reveal's real coin footage instead; re-upload <10 MB to swap in).
+
+### Cut / timing
+8 beats over the locked VO timeline (vo adelays unchanged): keeper 11s ·
+wall 12s · plinth 12s · screen 20s (incl. full-frame cut) · case 13s ·
+billboard 11s · handover 10s · endcard 5.8s → 90.6s via 0.6s xfades.
+Each Ezra scene slowed 1.25–1.625x to sit under its VO line.
+
+### Audio — STEREO this time
+7 VO takes → amix → loudnorm −16 → **panned to stereo** → sidechain-duck
+music (stereo) → mix → loudnorm −14. Output 2ch/48k. Music fades last 2s.
+
+### Verified
+- ffprobe 90.60s / 1080p / 25fps / 1 video + 1 **stereo** audio ✓
+- 9 beat frames: content matches the VO line at each moment ✓
+- Black-frame check clean at all 7 joins ✓
+- Audio VO@27 −15.3 dB vs music-only@40 −18.0 dB — VO above music ✓
+
+### Honest notes for the final
+- **Slow-mo 1.25–1.625x** on the 8s Flow scenes to fill the VO windows →
+  minor judder on the most-slowed (s6). Fix: generate 10–12s Flow clips.
+- s5's aircraft is still the stock plate (Ken Burns) — a Flow-animated
+  aircraft would lift the full-frame moment.
+- Coins/artefacts screen content is the 640x360 reveal (soft; screen
+  treatment masks it). Clean re-export or turntable <10 MB improves it.
+- No burned captions this round (kept the composites clean) — can add.
+- Emblem bug still deferred (no emblem.png).
+- Working branch only, not main.
