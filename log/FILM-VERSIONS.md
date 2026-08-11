@@ -5,6 +5,8 @@
 | spec v1 | Jul 2026 | 6-scene from-scratch plan, Myron Golden framework | pre-dated Reg's footage |
 | spec v2 | 5 Aug | Reg's 65s reveal becomes the spine; assets demoted to enrichment | real product beats assembly |
 | DRAFT v1 | 10–11 Aug | first assembled cut; Script #4 VO incl. £1,500/$1,999; captions (EB Garamond); emblem bug deferred. **Master: 90.60s, 1920x1080/25fps, 11.70 MB** | client review copy |
+| Treatment v2 | 11 Aug | "The Keeper" — character-led gen-AI rebuild; VO+music locked, all picture regenerated (Flow/Gemini). Treatment + prompt pack + lookbook in film/treatment/ | v1 rejected as too basic |
+| LOOK-TEST v2 | 11 Aug | 2 generated clips (Keeper + Handover) graded to the heritage look, cut over vo-s1/vo-s8 + music. **17.40s, 1920x1080/25fps, 7.75 MB** | prove the direction on screen |
 
 **Open items carried between versions:** price confirmation (£1,500 vs
 £1,200) · Reg's clean re-export (no watermark) for the master · final

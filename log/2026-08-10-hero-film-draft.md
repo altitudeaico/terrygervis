@@ -123,3 +123,28 @@ music afade-out last 2s. Captions burned (EB Garamond, gold).
   frames at any of the 4 joins (blackframe check clean) ✓
 - Audio @18s (VO active) vs @39s (music only): VO mean −13.8/peak −1.5 dB
   vs music −14.7/−4.3 dB — VO clearly above the ducked music ✓
+
+## Session — 2026-08-11 (Claude Code): LOOK-TEST v2 ("The Keeper") ✅
+First on-screen proof of the v2 gen-AI direction. Pulled 4 files from
+Drive film-src (sizes byte-matched): s1-keeper.mp4, s8-handover.mp4,
+ezra-ref-portrait.jpeg, ezra-ref-full.jpeg (Ezra = the Keeper character).
+
+**Deliverable:** `film/out/ascent-LOOKTEST-v2.mp4` — 17.40s, 1920x1080,
+25fps, 1 video + 1 audio, 7.75 MB.
+
+- Both Flow/Veo clips arrived 1280x720/24fps/8s (native Veo audio, stripped
+  with -an). Conformed to 1920x1080/25fps.
+- Heritage grade applied to both (teal into shadows, gold into highlights,
+  eq contrast/sat, subtle vignette, gentle temporal grain) — kept light,
+  the clips were generated close to the look.
+- Cut: s1-keeper (8s) → 0.6s crossfade → s8-handover; s8's final frame
+  held +2.0s (clone) so the closing line resolves; audio+video fade over
+  the final 1.5s.
+- Audio: vo-s1 @1.0s, vo-s8 @8.3s, music.mp3 from start, ducked via
+  sidechaincompress, VO bus loudnorm −16, final mix loudnorm −14.
+- Verified: ffprobe 17.40s/1080p/25fps/1+1 ✓; frames @3s (Keeper at his
+  desk) and @14s (the handover) both cinematic and consistently graded ✓;
+  audio VO −14.3/−14.1 dB vs music-only gap −16.2 dB — VO above music ✓.
+- Note: mix is mono again (mono VO drives amix) — carry the stereo fix
+  into the full v2 build. 720p→1080p upscale on the clips is clean.
+- Committed to the working branch only (NOT main), per instruction.
