@@ -343,3 +343,44 @@ above the ducked music at s3/s5/s7 ✓.
   swaps onto the panel when the correct file lands.
 - Mild slow-mo on some 8s Ezra scenes to fill their VO windows.
 - Emblem bug still deferred. Working branch only, not main.
+
+---
+
+## 2026-08-12 — Reg feedback follow-up: three prepped assets
+
+Reginald liked the "Ezra" cut for museums/institutions; wants a **more
+upbeat** general-public version ("punchy but still regal") once Terry
+supplies that script. He sent a rough cut (dense sales infographic + hard
+sell endcard). User approved prepping three assets that marry Reg's density
+with our polish:
+
+1. **Premium 10-piece collection card** — `film/work/tenpiece_card.png`
+   (1920x1080, navy/gold/EB Garamond). Header "THE COLLECTION / Ten pieces
+   in every presentation set", two columns of 5 numbered items with italic
+   gold descriptors + hairline dividers, footer line. Plays full-frame or on
+   Ezra's gallery wall. Items: 1 two commemorative gold coins (38mm 24ct) ·
+   2 original Merlin engine relic (1944 R-R) · 3 Jamaica Spitfire Fund comic
+   replica · 4 Aircraft-to-Supercar book · 5 The First Top Guns pop-up · 6
+   Man to Superman: Prelude to War booklet · 7 Rolls-Royce: The Mighty
+   Merlin booklet · 8 Royal Warrant Certificate of provenance · 9 Women at
+   War A3 art print · 10 a complete personal museum. (Build fix: `:` in
+   titles 6/7 must be `\:`-escaped or drawtext truncates at the colon.)
+
+2. **Premium sales endcard** — `film/work/endcard_sales.png` (1920x1080).
+   Reg's density, our grade: coins hero cropped from reveal, gold double-
+   frame, "PILOTS OF THE CARIBBEAN & TUSKEGEE AIRMEN" (SC), "History you can
+   hold. A legacy you can pass on.", cased-coins overlay, "ONLY 500
+   LIMITED-EDITION SETS WORLDWIDE", "£1,500 · $1,999", closing line "We
+   didn't just fly planes — we changed history." (curly apostrophe U+2019 to
+   avoid drawtext escaping breakage).
+
+3. **Cut B music brief** — `film/treatment/CUT-B-MUSIC-BRIEF.md`. Full brief
+   for the upbeat retail track (feel, 100–112 BPM, major, ~95s arc mapped to
+   script beats, instrumentation, ready-to-paste Suno/Udio + library search
+   prompts, delivery as `music-cutB.mp3` to Drive). Can't generate/fetch
+   audio here (egress blocked) — brief ensures a right-first-time pickup.
+
+**Recommendation for Cut B:** re-skin the v5 timeline (same Ezra spine +
+on-screen content) with Terry's new upbeat script + `music-cutB.mp3` +
+these two new cards. Reuses everything built; one-pass turnaround. Awaiting
+Terry's script and the track.
