@@ -13,10 +13,12 @@ push as the work they describe.
 - [2026-08-10 — Hero film draft v1](2026-08-10-hero-film-draft.md)
 - [FILM-VERSIONS.md](FILM-VERSIONS.md) — the film changelog
 - [SITE-VERSIONS.md](SITE-VERSIONS.md) — the site/ sandbox changelog
+- [COLLECTION-VERSIONS.md](COLLECTION-VERSIONS.md) — the collection/ product page changelog
 
 ## Where everything lives
 - **This repo root** — Ascent Collection progress page (Reg's link)
 - **site/** — website rebuild sandbox
+- **collection/** — Historic Coins product page, built from Reginald's outline
 - **log/** — this journal
 - Assets: Reg's Drive folder (ID 1-C8O4fUix19cV6hYuYZCAJkiFLnYDEKz),
   GoDaddy media library, GHL media library, Flow outputs (local)
