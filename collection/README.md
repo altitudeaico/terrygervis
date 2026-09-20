@@ -67,6 +67,17 @@ The founder portrait is an empty slot awaiting a supplied image.
 
 Full Drive-to-repo mapping is in Supabase, table tj_asset_map.
 
+## Cache-busting on styles.css and script.js
+
+Both are linked as `styles.css?v=N` / `script.js?v=N` in index.html.
+GitHub Pages' CDN (and browsers) can otherwise keep serving a stale
+copy of these two files even after a fresh push, while index.html
+itself updates fine and small direct-image-src changes work
+correctly since those get new filenames. Symptom looks like "the
+HTML changed but old styling/behaviour is still showing." Whenever
+you edit styles.css or script.js, bump the `?v=N` number in both
+places in index.html in the same commit.
+
 ## Before this can go live
 
 - Hosting destination. GoDaddy is not being renewed and the contents were
