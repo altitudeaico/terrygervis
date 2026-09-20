@@ -76,3 +76,56 @@ footer{padding:45px 6vw;background:#09070b;display:grid;grid-template-columns:1f
 footer .contact{color:#8d7e92;line-height:1.7}
 footer .contact a{color:#c9a45c;text-decoration:none}
 @media(max-width:640px){.force-row{flex-direction:column;gap:1.8rem}.force-rule{width:64px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,164,92,.45),transparent)}}
+
+
+/* ---- v4: Reginald visual direction — bright aviation heritage editorial ---- */
+:root{
+  --night:#12385a;--purple:#dcecf6;--violet:#b9dced;--gold:#b28a3b;
+  --paper:#ffffff;--ink:#17324a;--muted:#647b8e;
+  --sky:#dff2fb;--sky-strong:#9ed5ef;--blue:#276f9e;--deep-blue:#12385a;
+  --cloud:#f7fbfd;--line:#c9dce7
+}
+body{background:var(--cloud);color:var(--ink)}
+.nav{background:rgba(255,255,255,.92);box-shadow:0 1px 0 rgba(18,56,90,.10);backdrop-filter:blur(14px);color:var(--deep-blue)}
+.nav nav>a:not(.cta-sm){opacity:.78}.cta-sm{border-color:#7fb9d6;background:#eaf7fc;color:var(--deep-blue)}
+.hero{color:var(--deep-blue);background:
+ linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 43%,rgba(223,242,251,.55) 66%,rgba(158,213,239,.38) 100%),
+ radial-gradient(circle at 82% 20%,#fff 0,#dff2fb 40%,#a8d8ed 100%)}
+.hero:before{content:"";position:absolute;inset:78px 0 auto 0;height:6px;background:linear-gradient(90deg,#7fc4e4 0 72%,#b28a3b 72% 78%,#fff 78%)}
+.hero{position:relative}.hero .intro{color:#587187}.hero .lead{color:#244f70}.hero i,.hero .edition b{color:var(--blue)}
+.hero .ghost{border-color:#7ca9c1}.hero .edition{border-color:#b9d7e5}.hero .edition span{color:#60798d}
+.hero-product img{filter:drop-shadow(0 32px 40px rgba(18,56,90,.22))}.glow{background:#9ed5ef55}
+.hero-product p{color:#59788e}.kicker{color:var(--blue)}.kicker.dark{color:#3b759b}
+.btn{background:var(--deep-blue);color:#fff}.btn:hover{background:#276f9e}.darkbtn{background:var(--deep-blue);color:#fff}
+.logos{background:#fff;border-top:1px solid #dce9ef;border-bottom:1px solid #dce9ef}
+.filmstrip{background:linear-gradient(135deg,#dff2fb,#f8fcfe);color:var(--deep-blue)}
+.video-frame{border:1px solid #b7d7e7;background:linear-gradient(145deg,#fff,#e8f5fb)}
+.video-placeholder{color:#68849a}.video-placeholder .play{border-color:#78b6d4;color:#276f9e}.video-placeholder p{color:#173f5d}
+.story{background:#fff}.story-copy{color:#526d80}.drop:first-letter{color:var(--blue)}.aircraft .line{background:#c9dce7}.aircraft figcaption{color:#52738a}
+.women{position:relative;overflow:hidden;background:linear-gradient(115deg,#2d79a7 0%,#67b5d9 54%,#dff2fb 100%);color:#fff}
+.women:before{content:"WOMEN AT WAR";position:absolute;right:-1vw;top:18px;font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(54px,9vw,150px);color:#ffffff12;letter-spacing:-.04em;white-space:nowrap}
+.women .kicker{color:#fff}.women h2 i{color:#fff}.women-copy>p:not(.kicker,.rights){color:#f4fbff}.women .rights{color:#e5f4fb!important}
+.coin-wrap{background:radial-gradient(circle,#fff 0,#eaf6fb 55%,#b9dced 100%);border-color:#ffffff88}.coin-wrap img{filter:drop-shadow(0 18px 24px rgba(18,56,90,.24))}
+.coin-pair p{color:#edf8fc}
+.collection{background:#f7fbfd;color:var(--ink)}.collection h2 i{color:var(--blue)}.centered>p:last-child{color:#60798d}
+.hero-wide{background:linear-gradient(135deg,#fff,#dff2fb);border:1px solid #d1e4ed;padding:34px}.hero-wide img{filter:drop-shadow(0 25px 30px rgba(18,56,90,.16))}
+.contents-grid{border-color:#c9dce7}.contents-grid>div{border-color:#c9dce7}.contents-grid b{color:var(--blue)}.contents-grid p{color:#60798d}.note{color:#71889a}
+.contents-extra img{border-color:#c9dce7}.contents-extra figcaption{color:#60798d}
+.craft{background:#fff}.craft-visual{background:linear-gradient(145deg,#dff2fb,#f9fcfe)}.craft-copy>p:not(.kicker,.rights){color:#526d80}.craft dl{border-color:#c9dce7}.craft dl div{border-color:#c9dce7}.craft dt{color:#668094}
+.legacy{position:relative;overflow:hidden;background:linear-gradient(100deg,#e5f5fc 0%,#9ed5ef 60%,#74b9da 100%);color:var(--deep-blue)}
+.legacy:before{content:"FIRST EDITION";position:absolute;right:2vw;top:10px;font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(55px,9vw,140px);color:#ffffff28;white-space:nowrap}
+.legacy>div,.legacy>img{position:relative;z-index:1}.legacy h2 i{color:#1e638f}.legacy img{box-shadow:0 25px 55px rgba(18,56,90,.20)}
+.mission{background:#fff;color:var(--ink)}.mission-grid article{border-color:#c9dce7}.mission-grid p{color:#587187}.mission-foot{color:#60798d}
+.founder{position:relative;background:linear-gradient(120deg,#276f9e,#79bddc);color:#fff;overflow:hidden}
+.founder:before{content:"LEGACY";position:absolute;right:1vw;bottom:-4vw;font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(90px,17vw,250px);color:#ffffff0d}
+.founder-copy,.founder-visual{position:relative;z-index:1}.founder-copy .role{color:#e9f7fd}.founder-copy p{color:#edf8fc}
+.portrait-slot{border-color:#ffffff70;background:#ffffff12;color:#e9f7fd}
+.press{background:#f1f8fc;color:var(--ink)}.press-lede{color:#587187}.press h2 i{color:var(--blue)}
+.press-slot{border-color:#a9cfe1;background:linear-gradient(145deg,#fff,#dff2fb)}.press-placeholder{color:#68849a}.press-placeholder .doc{color:#276f9e}.press-placeholder p{color:#173f5d}.press .rights{color:#71889a}
+.salute{position:relative;background:linear-gradient(120deg,#12385a,#276f9e 58%,#79bddc);color:#fff;overflow:hidden}
+.salute:before{content:"1918  •  1947";position:absolute;left:50%;top:18px;transform:translateX(-50%);font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(42px,8vw,120px);color:#ffffff0d;white-space:nowrap}
+.salute-inner{position:relative;z-index:1}.salute h2 i,.force-mark{color:#fff}.force small,.salute-foot{color:#dff2fb}.force-rule{background:linear-gradient(180deg,transparent,#ffffff99,transparent)}.partner-slot{color:#c8e4f1}
+.register{background:#f7fbfd;color:var(--ink)}.register h2 i{color:var(--blue)}.register>div>p:last-child{color:#587187}
+.register label{color:#587187}.register input,.register select{border-color:#aac8d8;color:var(--ink);background:transparent}.register #status{color:var(--blue)}
+footer{background:#12385a;color:#c5dbe7}footer .fine{border-color:#ffffff1a}footer .contact{color:#d9e9f1}footer .contact a{color:#fff}
+@media(max-width:900px){.hero:before{top:78px}.women:before,.legacy:before,.founder:before,.salute:before{opacity:.7}}
