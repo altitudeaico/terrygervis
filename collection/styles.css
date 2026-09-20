@@ -202,3 +202,7 @@ footer{background:#12385a;color:#c5dbe7}footer .fine{border-color:#ffffff1a}foot
 /* ---- P0.2 — Two Air Forces panoramic banner (overrides .aircraft grid/img sizing for this block only) ---- */
 .aircraft-banner{display:block}
 .aircraft-banner img{display:block;width:100%;height:auto}
+
+/* ---- P0.7 — Founder portrait (overrides .portrait-slot placeholder styling for the filled state only) ---- */
+.portrait-filled{border-style:solid;border-color:transparent;background:none}
+.portrait-filled img{width:100%;height:100%;object-fit:cover;display:block}
