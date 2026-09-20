@@ -198,3 +198,7 @@ footer{background:#12385a;color:#c5dbe7}footer .fine{border-color:#ffffff1a}foot
   .hero-product{width:100%;justify-self:center;margin-top:.5rem}
   .hero-product img{mix-blend-mode:normal}
 }
+
+/* ---- P0.2 — Two Air Forces panoramic banner (overrides .aircraft grid/img sizing for this block only) ---- */
+.aircraft-banner{display:block}
+.aircraft-banner img{display:block;width:100%;height:auto}
