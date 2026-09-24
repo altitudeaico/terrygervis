@@ -209,3 +209,6 @@ footer{background:#12385a;color:#c5dbe7}footer .fine{border-color:#ffffff1a}foot
 
 /* ---- UX polish pass, 20 Sep — aircraft caption restored under the P0.2 banner ---- */
 .aircraft-caption{margin-top:14px;text-align:center;font-size:9px;letter-spacing:.18em;color:#52738a}
+
+/* ---- Hero badge, 24 Sep — "The Story of Freedom & Democracy" from Reginald's launch materials ---- */
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--deep-blue);font-size:10px;letter-spacing:.15em;text-transform:uppercase;padding:7px 16px;margin:0 0 20px;font-weight:600}
