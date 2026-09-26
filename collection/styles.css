@@ -68,7 +68,7 @@ footer{padding:45px 6vw;background:#09070b;display:grid;grid-template-columns:1f
 .salute h2 i{color:#c9a45c;font-style:normal}
 .force-row{display:flex;align-items:center;justify-content:center;gap:clamp(1.5rem,5vw,4rem);margin:clamp(2.5rem,5vw,3.5rem) 0}
 .force-mark{display:block;font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:.06em;color:#c9a45c}
-.force small{display:block;margin-top:.5rem;font-size:.7rem;letter-spacing:.1em;line-height:1.7;color:#8d7e92;text-transform:uppercase}
+.force small{display:block;margin-top:.5rem;font-size:.78rem;font-weight:600;letter-spacing:.1em;line-height:1.7;color:#8d7e92;text-transform:uppercase}
 .force-rule{width:1px;height:64px;background:linear-gradient(180deg,transparent,rgba(201,164,92,.45),transparent)}
 .salute-foot{color:#a99eac;font-size:1rem;font-weight:600;letter-spacing:.04em}
 .salute-brands{display:flex;align-items:center;justify-content:center;gap:clamp(1.5rem,4vw,3rem);margin-top:clamp(2rem,4vw,2.8rem);flex-wrap:wrap}
