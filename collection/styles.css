@@ -246,3 +246,10 @@ h1.long{font-size:clamp(28px,3.4vw,44px);line-height:1.25;letter-spacing:-.01em}
 .hero-foot .actions{margin-top:28px}
 .hero-foot .edition{margin-top:32px}
 @media(max-width:900px){.hero{padding-top:120px}.hero-product{margin-top:36px}}
+
+/* ---- Artboard 2 rebuild, 27 Sep — Two Air Forces / Film / RAF folded into one chapter ---- */
+.badge-slot{grid-column:1/-1;margin:20px 0 0;padding:14px 18px;border:1px dashed #c9dce7;background:#f7fbfd;color:#526b7b;font-size:.72rem;letter-spacing:.03em;line-height:1.6;text-align:center}
+.story-film{grid-column:1/-1;margin-top:64px;max-width:1000px;margin-left:auto;margin-right:auto;text-align:center}
+.story-press{grid-column:1/-1;margin-top:64px;max-width:820px;margin-left:auto;margin-right:auto;text-align:center;border-top:1px solid #c9dce7;padding-top:56px}
+.story-press h3{font-family:"Libre Caslon Display",Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.18;margin:.7rem 0 0}
+.story-press h3 i{font-style:normal;color:var(--blue)}
