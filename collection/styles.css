@@ -227,3 +227,17 @@ footer{background:#12385a;color:#c5dbe7}footer .fine{border-color:#ffffff1a}foot
 h1.long{font-size:clamp(28px,3.4vw,44px);line-height:1.25;letter-spacing:-.01em}
 .edition-note{font-family:Georgia,serif;font-style:italic;font-size:14px;line-height:1.6;color:#948a98;max-width:600px;margin-top:14px}
 .hero .edition-note{color:#587187}
+
+/* ---- Artboard 4 rebuild, 27 Sep — Women at War: bright editorial spread, not a dark two-card panel ---- */
+.women{background:linear-gradient(180deg,#ffffff 0%,#f7fbfd 100%);color:var(--ink)}
+.women:before{color:#eef6fb}
+.women .kicker{color:var(--blue)}
+.women h2 i{color:var(--blue)}
+.women-copy>p:not(.kicker,.rights){color:#3f5b70}
+.women .rights{color:#4a6577!important}
+.coin-pair{gap:clamp(1.5rem,3vw,2.5rem)}
+.coin-wrap{aspect-ratio:4/5;background:#fff;border:1px solid #d9e9f1;box-shadow:0 24px 48px rgba(18,56,90,.12)}
+.coin-wrap img{width:100%;height:100%;object-fit:cover;filter:none}
+.coin-pair h3{font-size:clamp(1.6rem,2.4vw,2.1rem);font-weight:400;margin-top:22px}
+.coin-pair p{color:#4f6b7d;font-size:14px}
+@media(max-width:900px){.coin-wrap{aspect-ratio:1}}
