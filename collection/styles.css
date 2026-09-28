@@ -282,3 +282,8 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 
 /* ---- Item count confirmed as ten by Reginald, 29 Sep: note becomes a plain statement, not a disclaimer ---- */
 .collection .note{font-size:1rem;color:#4f6b7d;text-align:center;font-family:Georgia,serif}
+
+/* ---- Content from Reginald's notes, 29 Sep: struck-by credit, obverse/reverse copy, RAF magazine headline ---- */
+.craft-sides{font-family:Georgia,serif;font-size:1.05rem;line-height:1.75;color:#3f5b70;margin:0 0 8px}
+.craft dd{text-align:right;max-width:62%}
+.press-quote{font-family:Georgia,serif;font-style:italic;font-size:1.05rem;line-height:1.6;color:#3f5b70;max-width:56ch;margin:1rem auto 0}
