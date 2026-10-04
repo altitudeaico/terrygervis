@@ -1,4 +1,12 @@
-document.getElementById('interestForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('status').textContent='Prototype only — Growth Lab connection will be wired in the next build pass.';});
+/* Registration: until the registration link is live, send the details to the contact inbox by email. */
+document.getElementById('interestForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target, v=function(n){return (f.elements[n]&&f.elements[n].value||'').trim();};
+  var to='jemglobaltv@gmail.com';
+  var body='Name: '+v('name')+'\nEmail: '+v('email')+'\nPhone: '+v('phone')+'\nCountry: '+v('country')+'\nInterest: '+v('interest');
+  window.location.href='mailto:'+to+'?subject='+encodeURIComponent('Registration of interest')+'&body='+encodeURIComponent(body);
+  document.getElementById('status').textContent='Your email app should now open with your details ready to send. If it does not, please email '+to+'.';
+});
 /* Mobile nav: hamburger toggle for the section-link dropdown. */
 (function () {
   var toggle = document.getElementById('menuToggle');

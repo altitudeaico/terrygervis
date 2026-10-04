@@ -287,3 +287,8 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 .craft-sides{font-family:Georgia,serif;font-size:1.05rem;line-height:1.75;color:#3f5b70;margin:0 0 8px}
 .craft dd{text-align:right;max-width:62%}
 .press-quote{font-family:Georgia,serif;font-style:italic;font-size:1.05rem;line-height:1.6;color:#3f5b70;max-width:56ch;margin:1rem auto 0}
+
+/* ---- Real Magazine 128 cover replaces the placeholder panel ---- */
+.press-cover{margin:2.2rem auto 0;max-width:340px}
+.press-cover img{width:100%;box-shadow:0 18px 40px rgba(18,56,90,.18)}
+.press-cover figcaption{margin-top:12px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4f6b7d}
