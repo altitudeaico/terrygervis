@@ -333,8 +333,8 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 
 /* ---- Finite translation pass B1: his page 1 and page 2, reproduced literally and denser ---- */
 .hero{padding:104px 4vw 56px}
-.hero-top{max-width:1000px;margin:0 auto;text-align:center}
-.hero-top h1.long{font-size:clamp(28px,3.4vw,50px);line-height:1.15;margin:0 0 18px}
+.hero-top{max-width:1180px;margin:0 auto;text-align:center}
+.hero-top h1.long{font-size:clamp(38px,5vw,72px);line-height:1.06;margin:0 0 22px;text-wrap:balance}
 .hero-top .badge{margin:0 auto;font-size:clamp(11px,1.1vw,14px);padding:9px 22px}
 .hero-product{max-width:1400px;margin:28px auto 0;padding:clamp(.6rem,2vw,1.4rem) clamp(.6rem,2vw,1.4rem) 0}
 .hero-foot{max-width:780px;margin:30px auto 0;text-align:center}
