@@ -306,3 +306,16 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 .force-badge .emblem{flex:0 0 auto;width:clamp(70px,11vw,130px);align-self:center}
 .force-badge .emblem img{width:100%;height:auto}
 @media(max-width:700px){.force-badge{flex-wrap:wrap;justify-content:center;gap:1.4rem 1rem}.force-badge .wing{flex:1 1 44%;order:1}.force-badge .emblem{order:2;width:84px}}
+
+/* ---- Real photography, part 2: presentation cases, Lena and Mona, inside the box ---- */
+.prop-cases{display:flex;justify-content:center;align-items:flex-start;gap:clamp(1rem,4vw,3rem);background:none;border:0;padding:0}
+.prop-cases img{width:44%;max-width:360px;height:auto;filter:drop-shadow(0 22px 28px rgba(18,56,90,.22))}
+.coin-wrap{aspect-ratio:1}
+.coin-pair .credit{margin:10px 0 0;font-size:11px;letter-spacing:.06em}
+.coin-pair .coin-sides{font-style:italic}
+.box-inside{max-width:440px;margin:2.5rem auto;text-align:center}
+.box-inside img{width:100%;height:auto;filter:drop-shadow(0 22px 28px rgba(18,56,90,.22))}
+.box-inside p{margin:.9rem 0 0;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4f6b7d}
+.legacy-cases{display:flex;justify-content:center;align-items:flex-start;gap:clamp(.8rem,3vw,2rem)}
+.legacy-cases img{width:46%;max-width:300px;height:auto;box-shadow:none;filter:drop-shadow(0 24px 30px rgba(18,56,90,.25))}
+.legacy-cases{margin-top:2rem}
