@@ -292,3 +292,17 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 .press-cover{margin:2.2rem auto 0;max-width:340px}
 .press-cover img{width:100%;box-shadow:0 18px 40px rgba(18,56,90,.18)}
 .press-cover figcaption{margin-top:12px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4f6b7d}
+
+/* ---- Real photography replaces rendered imagery (4 Oct): hero, Two Air Forces badge, Spitfire photo ---- */
+.hero-product{background:linear-gradient(180deg,#183552 0%,#0c1e31 100%);padding:clamp(1rem,3vw,2.6rem) clamp(1rem,3vw,2.6rem) 0;overflow:hidden}
+.hero-product:before,.hero-product:after{display:none}
+.hero-product img{width:100%;max-width:100%;mix-blend-mode:normal;filter:none}
+.hero-product p{margin:0;padding:1.1rem 0 1.4rem;color:#cfe3f0}
+@media(max-width:560px){.hero-product img{width:100%}}
+.force-badge{grid-column:1/-1;display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(.8rem,3vw,2.5rem);max-width:1100px;width:100%;margin:8px auto 56px}
+.force-badge .wing{margin:0;flex:1 1 0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.force-badge .wing img{width:100%;height:auto}
+.force-badge .wing .plane{width:62%}
+.force-badge .emblem{flex:0 0 auto;width:clamp(70px,11vw,130px);align-self:center}
+.force-badge .emblem img{width:100%;height:auto}
+@media(max-width:700px){.force-badge{flex-wrap:wrap;justify-content:center;gap:1.4rem 1rem}.force-badge .wing{flex:1 1 44%;order:1}.force-badge .emblem{order:2;width:84px}}
