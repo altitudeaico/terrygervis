@@ -319,3 +319,14 @@ h1.long{font-size:clamp(34px,4.6vw,66px);line-height:1.12;letter-spacing:-.02em}
 .legacy-cases{display:flex;justify-content:center;align-items:flex-start;gap:clamp(.8rem,3vw,2rem)}
 .legacy-cases img{width:46%;max-width:300px;height:auto;box-shadow:none;filter:drop-shadow(0 24px 30px rgba(18,56,90,.25))}
 .legacy-cases{margin-top:2rem}
+
+/* ---- Finite translation pass A: the ten pieces as a real list (replaces the AI-rendered contents graphic) ---- */
+.museum-board{display:grid;grid-template-columns:minmax(220px,.8fr) 1.6fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;max-width:1200px;margin:2rem auto 0}
+.museum-board .box-inside{margin:0}
+.ten-title{font-family:"Libre Caslon Display",Georgia,serif;font-weight:400;font-size:clamp(1.5rem,2.6vw,2.1rem);margin:0 0 1rem;color:var(--ink)}
+.ten{list-style:none;counter-reset:ten;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.9rem 2rem}
+.ten li{counter-increment:ten;position:relative;padding-left:2.6rem;border-top:1px solid #c9dce7;padding-top:.75rem}
+.ten li:before{content:counter(ten);position:absolute;left:0;top:.55rem;font-family:"Libre Caslon Display",Georgia,serif;font-size:1.7rem;line-height:1;color:var(--blue)}
+.ten h4{margin:0 0 .25rem;font-size:1rem;font-weight:600;color:var(--ink)}
+.ten p{margin:0;font-size:.92rem;line-height:1.5;color:#4f6b7d}
+@media(max-width:900px){.museum-board{grid-template-columns:1fr}.ten{grid-template-columns:1fr}}
